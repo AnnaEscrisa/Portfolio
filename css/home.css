@@ -1,0 +1,231 @@
+body {
+  
+  background: linear-gradient(160deg, #062942 0%, #5558f5 60%, #52bfe9 90%);
+  background-attachment: fixed;
+}
+
+
+.puntos {
+  height: 32px;
+  position: absolute;
+  transform: skew(18deg);
+  animation: square-to-circle 2s 1.5s forwards ease;
+}
+
+@keyframes square-to-circle {
+  0% {
+    border-radius: 0 0 0 0;
+  }
+
+  25% {
+    border-radius: 0% 0% 0% 50%;
+    width: 90px;
+  }
+
+  50% {
+    border-radius: 0% 0% 50% 50%;
+    width: 70px;
+  }
+
+  75% {
+    border-radius: 0% 50% 50% 50%;
+    width: 50px;
+  }
+
+  100% {
+    border-radius: 100%;
+    width: 40px;
+    transform: skew(0deg);
+  }
+}
+
+.long {
+  width: 54px;
+  height: 238px;
+  position: relative;
+  transform: skew(17deg);
+  background: linear-gradient(#52bfe9 20%, #4eeae3 30%, #4ef7e1 70%);
+  top: 304px;
+  left: 750px;
+  animation: largo-desaparece 2s 1.5s forwards ease-in-out;
+}
+
+@keyframes largo-desaparece {
+
+  100% {
+    width: 30px;
+    height: 0px;
+    left: 720px;
+    top: 309px;
+    border-radius: 100% 0 0 0;
+
+  }
+}
+
+.forma1{
+  background: linear-gradient(#5588f2, #52acec);
+  width: 13px;
+  height: 189px;
+  position: absolute;
+  top: 202px;
+  left: 594px;
+  transform: skew(-17deg);
+  z-index: 1;
+}
+
+.forma1::before{
+  content: '';
+  display: table;
+  position: relative;
+  width: 13px;
+  height: 189px;
+  left: -11px;
+  background-color: #aaffff;
+}
+
+.forma2 {
+  background: linear-gradient(#53a6ee, #52acec);
+  position: absolute;
+  height: 30px;
+  width: 53px;
+  transform: skew(-17deg);
+  top: 305px;
+  left: 618px;
+  z-index: 1;
+}
+
+.forma3 {
+  width: 51px;
+  height: 381px;
+  position: absolute;
+  transform: skew(17deg);
+  background: linear-gradient(#5680f3, #549cef, #50cfe8, #4ef7e1);
+  top: 161px;
+  left: 670px;
+}
+
+.forma3::before {
+  background-color: #aaffff;
+  content: '';
+  display: table;
+  position: relative;
+  width: 13px;
+  height: 381px;
+  left: -12px;
+
+}
+
+.banner {
+  height: 57px;
+  width: 500px;
+  display: flex;
+  padding: 0 0px 0 20px;
+  position: fixed;
+  border: solid 2px #4ef7e1;
+  transform: skew(17deg);
+  left: 870px;
+  top: 352px;
+  align-items: center;
+}
+
+.banner:hover::before {
+  width: 40px;
+  height: 32px;
+  border-radius: 100%;
+  transform: skew(-17deg);
+  content: '';
+  position: relative;
+  animation: circulos-banner 0.5s 0.2s ease-in-out forwards;
+}
+
+@keyframes circulos-banner {
+  0% {
+    right: 0px;
+  }
+  50% {
+    background-color: transparent;
+  }
+  100%{
+    right: 70px;
+    background-color: #4ef7e1;
+  }
+}
+
+
+.banner:hover::after {
+  content: '';
+  background-color: #4ef7e1;
+  position: absolute;
+  
+  height: 57px;
+  right: 0;
+  z-index: -1;
+  transition: 0.5s;
+  animation: banner-movement 0.5s linear forwards;
+}
+
+
+@keyframes banner-movement {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 523px;
+  }
+}
+
+
+h2 {
+  transform: skew(-17deg);
+  position: absolute;
+  color: #4ef7e1 !important;
+}
+
+.oculto {
+  color: transparent !important;
+}
+
+.banner:hover h2 {
+  color: transparent !important;
+  
+}
+
+.banner:hover .oculto {
+  color: #053864 !important;
+  transition: 1s;
+}
+
+/*? anim original por si acaso
+.animation{
+animation: square-to-circle 2s 1s forwards cubic-bezier(1, .015, .295, 1.225);
+
+}
+
+@keyframes square-to-circle {
+  0% {
+    border-radius: 0 0 0 0;
+    width: 450px;
+  }
+
+  25% {
+    border-radius: 0% 0% 0% 50%;
+    width: 250px;
+  }
+
+  50% {
+    border-radius: 0% 0% 50% 50%;
+    width: 250px;
+  }
+
+  75% {
+    border-radius: 0% 50% 50% 50%;
+    width: 250px;
+  }
+
+  100% {
+    border-radius: 100%;
+    width: 250px;
+    transform: translate(-150px)
+  }
+  */

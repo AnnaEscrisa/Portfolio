@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Contacto</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/Contacto.css">
+
+  <script class="u-script" type="text/javascript" src="./js/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="./js/nicepage.js" defer=""></script>
+
+</head>
+
+<body>
+  <!--navbar-->
+  <header>
+    <div class="container">
+      <!--logo-->
+      <a href="Index.html">
+        <img src="./images/logo-standard.png">
+      </a>
+
+      <!--menu-->
+      <ul>
+        <li>
+          <a href="Sobre-Mi.html">Sobre Mi</a>
+        </li>
+        <li>
+          <a href="Proyectos.html">Proyectos</a>
+        </li>
+        <li>
+          <a href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <section class="titulo">
+    <div>
+      <h1>⫶Contacto⫶</h1>
+    </div>
+  </section>
+
+  <section class="seccion1">
+    <div class="flex-container">
+      <div>
+        <p>Si necesitas
+          ponerte en contacto conmigo, puedes usar el formulario de la derecha o enviarme
+          <a href="mailto:anna.escrisa@gmail.com">un email.</a>
+        </p>
+        <p>También puedes encontrarme en: </p>
+        <div class="contactoLinks">
+          <a href="https://github.com/AnnaEssa"><img src="images/38401-789a6cd8.png" alt=""><p>Github</p></a>
+          <a href="https://www.linkedin.com/in/anna-escribano-sa/"><img src="images/121509-f38f239e.png" alt=""><p>Linkedin</p></a>
+        </div>
+      </div>
+
+      <!--! ALERT anyadir el envio del email, porque no esta-->
+      <!-- form, linkeado a netlify -->
+      <form action="" name="contact" method="post" data-netlify="true" onsubmit="submit">
+        <div>
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div>
+          <input type="email" name="email" placeholder="Tu email" required>
+        </div>
+        <div>
+          <textarea name="mensaje" placeholder="Tu mensaje" rows="4" cols="50" required></textarea>
+        </div>
+        <button type="submit">Enviar
+        </button>
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!--footer-->
+  <footer>
+    <div>
+      <p>2023 © Anna Escribano
+        <a class="gitIcon" href="https://github.com/AnnaEssa"><img src="images/38401-789a6cd8.png" alt=""></a>
+        <a class="linkIcon" href="https://www.linkedin.com/in/anna-escribano-sa/"><img src="images/121509-f38f239e.png" alt=""></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

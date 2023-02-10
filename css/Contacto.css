@@ -1,0 +1,105 @@
+:root {
+  --url: url("../images/contact.jpeg")
+}
+
+.titulo {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+}
+
+.seccion1 {
+  background-image: linear-gradient(#171e31, black);
+  min-height: 100vh;
+}
+
+
+.seccion1 p {
+  color: #5863f8;
+  display: block;
+}
+
+.seccion1 p a {
+  color: #16bac5;
+  transition-duration: 0.5s;
+ 
+}
+
+.seccion1 p a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+form {
+  min-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  color: #16bac5;
+  width: 100%;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-color: #5863f8;
+  background-color: #171e31;
+  border-width: 2px;
+  padding: 10px 12px;
+  font: inherit;
+  max-width: 500px;
+}
+
+::placeholder {
+  color: #16bac5;
+  opacity: 0.5;
+}
+
+form button {
+  border: 2px solid #5863f8;
+  color: #5863f8;
+  background-color: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 30px;
+  width: fit-content ;
+  transition-duration: 0.5s;
+  font-size: inherit;
+}
+
+form button:hover {
+  color: white;
+  background-color: #16bac5;
+  border-color: #16bac5;
+  box-shadow: rgb(75, 75, 75) 0 0 10px 2px ;
+}
+
+.contactoLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contactoLinks a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contactoLinks img {
+  height: 60px;
+  background-color: #16bac5;
+}
+
+.contactoLinks a p{
+  color: transparent;
+  transition: 0.5s;
+}
+
+.contactoLinks a:hover p{
+  color: #16bac5;
+}
