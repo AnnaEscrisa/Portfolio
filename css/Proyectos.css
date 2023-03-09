@@ -27,6 +27,10 @@ body {
   margin: 116px 0 0;
 }
 
+.grid1.php {
+  margin-top: 10px
+}
+
 /*?--celdas superiores-*/
 .grid1-arriba {
   display: flex;
@@ -55,6 +59,9 @@ body {
   background-image: url("../images/escuela.png");
 }
 
+.php .imagen-grid {
+  background-image: url(../images/phplogin.png);
+}
 
 /*titulo proyecto*/
 .cajaTitulo {
@@ -275,5 +282,5 @@ h6 {
 /*?------ frontend -------*/
 
 .frontend .grid1 .imagen-grid {
-  background-image: linear-gradient(0deg, rgba(88, 99, 248, 0.7), rgba(88, 197, 248, 0.7)), url("../images/underconstruction.jpg");
+  background-image: linear-gradient(0deg, rgba(88, 99, 248, 0.7), rgba(88, 197, 248, 0.7)), url("../images/bigcat.png");
 }
