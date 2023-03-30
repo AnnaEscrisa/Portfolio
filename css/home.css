@@ -1,9 +1,7 @@
 body {
-  
   background: linear-gradient(160deg, #062942 0%, #5558f5 60%, #52bfe9 90%);
   background-attachment: fixed;
 }
-
 
 .puntos {
   height: 32px;
@@ -11,6 +9,28 @@ body {
   transform: skew(18deg);
   animation: square-to-circle 2s 1.5s forwards ease;
 }
+
+.p1 {
+  top: 304px;
+  left: 718px;
+  width: 110px;
+  background-color: #52bfe9;
+}
+
+.p2 {
+  top: 404px;
+  left: 749px;
+  width: 90px;
+  background-color: #4eeae3;
+}
+
+.p3 {
+  top: 510px;
+  left: 782px;
+  width: 110px;
+  background-color: #4ef7e1;
+}
+
 
 @keyframes square-to-circle {
   0% {
@@ -58,11 +78,10 @@ body {
     left: 720px;
     top: 309px;
     border-radius: 100% 0 0 0;
-
   }
 }
 
-.forma1{
+.forma1 {
   background: linear-gradient(#5588f2, #52acec);
   width: 13px;
   height: 189px;
@@ -73,7 +92,7 @@ body {
   z-index: 1;
 }
 
-.forma1::before{
+.forma1::before {
   content: '';
   display: table;
   position: relative;
@@ -112,7 +131,6 @@ body {
   width: 13px;
   height: 381px;
   left: -12px;
-
 }
 
 .banner {
@@ -123,9 +141,22 @@ body {
   position: fixed;
   border: solid 2px #4ef7e1;
   transform: skew(17deg);
+  align-items: center;
+}
+
+.b1 {
   left: 870px;
   top: 352px;
-  align-items: center;
+}
+
+.b2 {
+  top: 445px;
+  left: 900px
+}
+
+.b3 {
+  top: 544px;
+  left: 932px
 }
 
 .banner:hover::before {
@@ -142,10 +173,12 @@ body {
   0% {
     right: 0px;
   }
+
   50% {
     background-color: transparent;
   }
-  100%{
+
+  100% {
     right: 70px;
     background-color: #4ef7e1;
   }
@@ -156,7 +189,6 @@ body {
   content: '';
   background-color: #4ef7e1;
   position: absolute;
-  
   height: 57px;
   right: 0;
   z-index: -1;
@@ -188,7 +220,6 @@ h2 {
 
 .banner:hover h2 {
   color: transparent !important;
-  
 }
 
 .banner:hover .oculto {
@@ -196,36 +227,159 @@ h2 {
   transition: 1s;
 }
 
-/*? anim original por si acaso
-.animation{
-animation: square-to-circle 2s 1s forwards cubic-bezier(1, .015, .295, 1.225);
+
+
+@media (max-width: 480px) {
+
+
+  .forma1 {
+    width: 10px;
+    height: 140px;
+    position: absolute;
+    top: 85px;
+    left: 122px;
+  }
+
+  .forma1::before {
+    content: '';
+    display: table;
+    position: relative;
+    width: 7px;
+    height: 140px;
+    left: -6px;
+  }
+
+  .forma2 {
+    position: absolute;
+    height: 20px;
+    width: 53px;
+    top: 163px;
+    left: 140px;
+    z-index: 1;
+  }
+
+  .forma3 {
+    width: 37px;
+    height: 270px;
+    position: absolute;
+    top: 60px;
+    left: 175px;
+  }
+
+  .forma3::before {
+    background-color: #aaffff;
+    content: '';
+    display: table;
+    position: relative;
+    width: 10px;
+    height: 270px;
+    left: -8px;
+  }
+
+
+  .long {
+    width: 35px;
+    height: 167px;
+    position: relative;
+    top: 163px;
+    left: 235px;
+  }
+
+  .puntos {
+    height: 21px;
+  }
+
+  .p1 {
+    top: 163px;
+    left: 213px;
+    width: 70px;
+  }
+
+  .p2 {
+    top: 236px;
+    left: 236px;
+    width: 58px;
+  }
+
+  .p3 {
+    top: 309px;
+    left: 259px;
+    width: 70px;
+  }
+
+
+  @keyframes square-to-circle {
+
+    25% {
+      border-radius: 0% 0% 0% 50%;
+      width: 58px;
+    }
+
+    50% {
+      border-radius: 0% 0% 50% 50%;
+      width: 40px;
+    }
+
+    75% {
+      border-radius: 0% 50% 50% 50%;
+      width: 30px;
+    }
+
+    100% {
+      border-radius: 100%;
+      width: 22px;
+      transform: skew(0deg);
+    }
+  }
+
+  @keyframes largo-desaparece {
+
+    100% {
+      width: 20px;
+      height: 0px;
+      left: 213px;
+      top: 170px;
+      border-radius: 100% 0 0 0;
+    }
+  }
+
+
+  .banner {
+    height: 50px;
+    width: 200px;
+    align-items: center;
+    left: 102px;
+  }
+
+  .b1 {
+    top: 382px;
+  }
+  
+  .b2 {
+    top: 485px;
+  }
+  
+  .b3 {
+    top: 588px;
+  }
+
+  h2:not(.oculto) {
+    display: none;
+  }
+  .oculto {
+    color: #4ef7e1 !important;
+    font-size: medium;
+  }
+  
+  .banner::before {
+    width: 25px;
+    height: 22px;
+    border-radius: 100%;
+    transform: skew(-17deg);
+    content: '';
+    position: relative;
+    right: 70px;
+    background-color: #4ef7e1;
+  }
 
 }
-
-@keyframes square-to-circle {
-  0% {
-    border-radius: 0 0 0 0;
-    width: 450px;
-  }
-
-  25% {
-    border-radius: 0% 0% 0% 50%;
-    width: 250px;
-  }
-
-  50% {
-    border-radius: 0% 0% 50% 50%;
-    width: 250px;
-  }
-
-  75% {
-    border-radius: 0% 50% 50% 50%;
-    width: 250px;
-  }
-
-  100% {
-    border-radius: 100%;
-    width: 250px;
-    transform: translate(-150px)
-  }
-  */
