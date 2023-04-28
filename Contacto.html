@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Contacto</title>
+  <title id="pageTitle"></title>
 
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/Contacto.css">
@@ -26,13 +26,13 @@
       <!--menu-->
       <ul>
         <li>
-          <a href="Sobre-Mi.html">Sobre Mi</a>
+          <a href="Sobre-Mi.html" id="li1"></a>
         </li>
         <li>
-          <a href="Proyectos.html">Proyectos</a>
+          <a href="Proyectos.html" id="li2"></a>
         </li>
         <li>
-          <a href="#">Contacto</a>
+          <a href="#" id="li3"></a>
         </li>
       </ul>
     </div>
@@ -41,37 +41,35 @@
 
   <section class="titulo">
     <div>
-      <h1>⫶Contacto⫶</h1>
+      <h1 id="header"></h1>
     </div>
   </section>
 
   <section class="seccion1">
     <div class="flex-container">
       <div>
-        <p>Si necesitas
-          ponerte en contacto conmigo, puedes usar el formulario de la derecha o enviarme
-          <a href="mailto:anna.escrisa@gmail.com">un email.</a>
+        <p id="content1">
         </p>
-        <p>También puedes encontrarme en: </p>
+        <p id="content2"></p>
         <div class="contactoLinks">
-          <a href="https://github.com/AnnaEssa" aria-label="github de AnnaEssa"><img src="images/38401-789a6cd8.png" alt=""><p>Github</p></a>
-          <a href="https://www.linkedin.com/in/anna-escribano-sa/" aria-label="linkedin de Anna"><img src="images/121509-f38f239e.png" alt=""><p>Linkedin</p></a>
+          <a href="https://github.com/AnnaEscrisa" aria-label="github de AnnaEscrisa"><img src="images/38401-789a6cd8.png"
+              alt="">
+            <p>Github</p>
+          </a>
+          <a href="https://www.linkedin.com/in/anna-escribano-sa/" aria-label="linkedin de Anna"><img
+              src="images/121509-f38f239e.png" alt="">
+            <p>Linkedin</p>
+          </a>
         </div>
       </div>
 
-      <!--! ALERT anyadir el envio del email, porque no esta-->
+
       <!-- form, linkeado a netlify -->
       <form action="" name="contact" method="post" data-netlify="true" onsubmit="submit">
-        <div>
-          <input type="text" name="nombre" placeholder="Tu nombre" required>
-        </div>
-        <div>
-          <input type="email" name="email" placeholder="Tu email" required>
-        </div>
-        <div>
-          <textarea name="mensaje" placeholder="Tu mensaje" rows="4" cols="50" required></textarea>
-        </div>
-        <button type="submit">Enviar
+        <input type="text" name="nombre" id="formName" required>
+        <input type="email" name="email" id="formMail" required>
+        <textarea name="mensaje" rows="4" cols="50" id="formMessage" required></textarea>
+        <button id='button' type="submit">
         </button>
       </form>
 
@@ -84,10 +82,16 @@
   <footer>
     <div>
       <p>2023 © Anna Escribano
-        <a class="gitIcon" href="https://github.com/AnnaEssa"><img src="images/38401-789a6cd8.png" alt=""></a>
-        <a class="linkIcon" href="https://www.linkedin.com/in/anna-escribano-sa/"><img src="images/121509-f38f239e.png" alt=""></a>
+        <a class="gitIcon" href="https://github.com/AnnaEscrisa"><img src="images/38401-789a6cd8.png" alt=""></a>
+        <a class="linkIcon" href="https://www.linkedin.com/in/anna-escribano-sa/"><img src="images/121509-f38f239e.png"
+            alt=""></a>
     </div>
   </footer>
+
+
+  <script type="module" src="./js/navbar-data.js"></script>
+  <script src="./js/contact-data.js" type="module"></script>
+  <script type="module" src="./js/language-change.js"></script>
 
 </body>
 

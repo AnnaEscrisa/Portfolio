@@ -7,7 +7,7 @@ body {
   height: 32px;
   position: absolute;
   transform: skew(18deg);
-  animation: square-to-circle 2s 1.5s forwards ease;
+  animation: square-to-circle 2s 0.75s forwards ease;
 }
 
 .p1 {

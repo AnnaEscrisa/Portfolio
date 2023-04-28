@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
-  <title>Sobre Mi</title>
+  <title id="pageTitle"></title>
 
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/Sobre-Mi.css" media="screen">
@@ -26,13 +26,13 @@
       <!--menu-->
       <ul>
         <li>
-          <a href="#">Sobre Mi</a>
+          <a href="Sobre-Mi.html" id="li1"></a>
         </li>
         <li>
-          <a href="Proyectos.html">Proyectos</a>
+          <a href="Proyectos.html" id="li2"></a>
         </li>
         <li>
-          <a href="Contacto.html">Contacto</a>
+          <a href="Contacto.html" id="li3"></a>
         </li>
       </ul>
     </div>
@@ -40,7 +40,7 @@
 
   <section class="titulo">
     <div>
-      <h1>⫶Sobre Mí⫶</h1>
+      <h1 id="header"></h1>
     </div>
   </section>
 
@@ -50,11 +50,11 @@
       <img src="./images/portrait-about.jpg" alt="selfie">
       <!-- descripcion-->
       <div>
-        <h2>¿Quién Soy?</h2>
-        <p> Soy Anna Escribano, desarrolladora full-stack junior buscando mi primera oportunidad en la industria del
-          desarrollo web.</p>
-        <p>Empecé a formarme en esta disciplina en 2022, en el bootcamp Open Source Back-End Web Development. Durante este curso me interesé por el perfil de programadora Full Stack, por lo que que complementé mis estudios con el bootcamp Front-End Web Development.</p>
-        <p>Siempre estoy dispuesta a aprender nuevas tecnologías y colaborar con un equipo para alcanzar grandes resultados.</p>
+        <h2 id="subtitle1"></h2>
+        <p id="desc1"></p>
+        <p id="desc2"></p>
+        <p id="desc3"></p>
+        <p id="desc4"></p>
         
       </div>
     </div>
@@ -63,13 +63,12 @@
     <div class="container">
       <!--caja tecno-->
       <div>
-        <h2>Tecnologías y conocimientos</h2>
+        <h2 id="subtitle2"></h2>
       </div>
       <!--grid total-->
       <div class="tecno-grid">
         <!--tecno singular-->
         <div class="tecno-cell">
-          
           <img src="./images/html.png" alt="">
           <h4> HTML</h4>
         </div>
@@ -115,10 +114,15 @@
   <footer>
     <div>
       <p>2023 © Anna Escribano
-        <a class="gitIcon" href="https://github.com/AnnaEssa"><img src="images/38401-789a6cd8.png" alt=""></a>
+        <a class="gitIcon" href="https://github.com/AnnaEscrisa"><img src="images/38401-789a6cd8.png" alt=""></a>
         <a class="linkIcon" href="https://www.linkedin.com/in/anna-escribano-sa/"><img src="images/121509-f38f239e.png" alt=""></a>
     </div>
   </footer>
+
+  <script type="module" src="./js/navbar-data.js"></script>
+  <script src="./js/about-data.js" type="module"></script>
+  <script type="module" src="./js/language-change.js" ></script>
+ 
 
 </body>
 

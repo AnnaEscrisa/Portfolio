@@ -22,7 +22,7 @@
 .seccion1 p a {
   color: #16bac5;
   transition-duration: 0.5s;
- 
+
 }
 
 .seccion1 p a:hover {
@@ -38,7 +38,8 @@ form {
   gap: 10px;
 }
 
-input, textarea {
+input,
+textarea {
   color: #16bac5;
   width: 100%;
   border-top-style: none;
@@ -66,7 +67,7 @@ form button {
   margin-top: 20px;
   display: inline-block;
   padding: 10px 30px;
-  width: fit-content ;
+  width: fit-content;
   transition-duration: 0.5s;
   font-size: inherit;
 }
@@ -75,7 +76,7 @@ form button:hover {
   color: white;
   background-color: #16bac5;
   border-color: #16bac5;
-  box-shadow: rgb(75, 75, 75) 0 0 10px 2px ;
+  box-shadow: rgb(75, 75, 75) 0 0 10px 2px;
 }
 
 .contactoLinks {
@@ -95,11 +96,11 @@ form button:hover {
   background-color: #16bac5;
 }
 
-.contactoLinks a p{
+.contactoLinks a p {
   color: transparent;
   transition: 0.5s;
 }
 
-.contactoLinks a:hover p{
+.contactoLinks a:hover p {
   color: #16bac5;
 }
