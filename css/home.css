@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(160deg, #062942 0%, #5558f5 60%, #52bfe9 90%);
+  background: linear-gradient(50deg, #062942 50%,  #000000 90%);
   background-attachment: fixed;
 }
 
@@ -7,7 +7,7 @@ body {
   height: 32px;
   position: absolute;
   transform: skew(18deg);
-  animation: square-to-circle 2s 0.75s forwards ease;
+  animation: square-to-circle 2s 1.75s forwards ease;
 }
 
 .p1 {
@@ -67,7 +67,7 @@ body {
   background: linear-gradient(#52bfe9 20%, #4eeae3 30%, #4ef7e1 70%);
   top: 304px;
   left: 750px;
-  animation: largo-desaparece 2s 1.5s forwards ease-in-out;
+  animation: largo-desaparece 2s 1.75s forwards ease-in-out;
 }
 
 @keyframes largo-desaparece {
@@ -166,7 +166,7 @@ body {
   transform: skew(-17deg);
   content: '';
   position: relative;
-  animation: circulos-banner 0.5s 0.2s ease-in-out forwards;
+  animation: circulos-banner 0.4s 0.2s ease-in-out forwards;
 }
 
 @keyframes circulos-banner {
@@ -193,7 +193,7 @@ body {
   right: 0;
   z-index: -1;
   transition: 0.5s;
-  animation: banner-movement 0.5s linear forwards;
+  animation: banner-movement 0.4s linear forwards;
 }
 
 
@@ -212,20 +212,14 @@ h2 {
   transform: skew(-17deg);
   position: absolute;
   color: #4ef7e1 !important;
-}
-
-.oculto {
-  color: transparent !important;
+  transition: 1s;
 }
 
 .banner:hover h2 {
-  color: transparent !important;
+  color: #053864 !important;
 }
 
-.banner:hover .oculto {
-  color: #053864 !important;
-  transition: 1s;
-}
+
 
 
 

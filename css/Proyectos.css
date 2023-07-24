@@ -282,5 +282,5 @@ h6 {
 /*?------ frontend -------*/
 
 .frontend .grid1 .imagen-grid {
-  background-image: linear-gradient(0deg, rgba(88, 99, 248, 0.7), rgba(88, 197, 248, 0.7)), url("../images/bigcat.png");
+  background-image: url("../images/bigcat.png");
 }

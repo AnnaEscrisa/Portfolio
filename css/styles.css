@@ -3,8 +3,6 @@ imagenes obtenidas en: pexels, pixabay
 fuentes: googlefonts 
 */
 
-
-
 /*fuentes*/
 @font-face {
     font-family: 'noto_sans_symbols';
@@ -152,7 +150,7 @@ header li a:hover {
 .titulo {
     min-height: 307px;
     background-size: cover;
-    background-image: linear-gradient(0deg, rgba(88, 99, 248, 0.7), rgba(88, 99, 248, 0.7)), var(--url);
+    background-image: linear-gradient(180deg, rgba(88, 99, 248, 0.7), rgba(116, 211, 255, 0.7)), var(--url);
 }
 
 /*texto titulo*/
