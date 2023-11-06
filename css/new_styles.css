@@ -1,0 +1,233 @@
+/* 
+imagenes obtenidas en: pexels, pixabay
+fuentes: googlefonts 
+*/
+
+/*fuentes*/
+@font-face {
+    font-family: 'noto_sans_symbols';
+    src: url('../fonts/notosanssymbols-variablefont_wght-webfont.woff') format('woff2'),
+         url('../fonts/notosanssymbols-variablefont_wght-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kdam_thmor';
+    src: url('../fonts/kdamthmorpro-regular-webfont.woff') format('woff2'),
+         url('../fonts/kdamthmorpro-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*----------- general---------*/
+
+/* variable vacia para fondo .titulo, cada seccion tendra la suya*/
+/*! ALERTA, cambiar esto, no longer imagenes, solo degradado o lo que sea*/
+:root {
+    --url: url("")
+}
+
+body {
+    line-height: 1.6;
+    --size-xl: 1140px;
+    --size-sm: 400px;
+    font-family: 'noto_sans_symbols';
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    max-width: var(--size-sm);
+    min-width: 300px;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: var(--size-xl)
+    }
+}
+/*
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    flex-wrap: nowrap;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 100px;
+    gap: 90px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'kdam_thmor';
+
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #16bac5 !important;
+}
+
+
+h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-top: 20px;
+  
+}
+
+/*----------- nav -----------*/
+
+
+/*
+header {
+    top: 0px;
+    right: 0;
+    left: 0;
+    height: 80px;
+    z-index: 20;
+    position: fixed;
+    box-shadow: inset 0px 0px 40px rgb(145, 216, 221);
+    background-color: rgba(65, 63, 197, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+header .container {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a img {
+    height: 60px;
+    width: 50px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 0.75rem rgb(29, 18, 75));
+}
+
+
+header li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+header li a {
+    color: #1df0ff;
+}
+
+
+header li a:hover {
+    color: #000000;
+
+}
+
+/* ?----------cabecera seccion-------------*/
+/* fondo titulo*/
+
+/*
+.titulo {
+    min-height: 307px;
+    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(88, 99, 248, 0.7), rgba(116, 211, 255, 0.7)), var(--url);
+}
+
+/*texto titulo*/
+
+/*
+.titulo h1 {
+    width: 241px;
+    margin: 162px auto 60px;
+}
+
+/*antes despues fondo*/
+/*
+.titulo div:after,
+.titulo div:before {
+    content: '';
+    display: table;
+}
+
+
+
+/*?------footer------*/
+/*
+footer {
+    background-color: #16bac5;
+    color: white;
+    text-align: center;
+}
+
+footer div {
+    position: relative;
+    margin: 0 auto;
+    width: var(--size-basic);
+
+}
+
+footer div:before,
+footer div:after {
+    content: '';
+    display: table;
+}
+
+footer:first-of-type(p) {
+
+    width: 100%;
+    margin: 30px auto 0;
+    font-size: 0.875rem;
+}
+
+footer a {
+    display: block;
+    line-height: 0;
+    width: 46px;
+    height: 46px;
+    margin: -46px 510px 30px auto;
+    padding: 0;
+}
+
+footer img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.gitIcon {
+    margin: 24px auto 0 502px;
+}
+
+.linkIcon {
+    margin: -46px 510px 30px auto;
+}

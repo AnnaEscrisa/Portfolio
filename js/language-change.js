@@ -1,7 +1,11 @@
 //obtiene lenguage del navegador y adapta la pagina al idioma
 export function autoLanguage(data) {
 
-    let language = localStorage.getItem('language');
+
+    let language = navigator.language;
+
+    //usar cuando se haga cambio manual de idioma
+    //let language = localStorage.getItem('language');
 
     //para idiomas que no sean ingles/espanyol, o versiones no estandar de estos
     if (language != 'en-US' | 'es-ES') {

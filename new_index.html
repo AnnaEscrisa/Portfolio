@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/new_styles.css">
+    <link rel="stylesheet" href="./css/new_home.css">
 
     <script class="u-script" type="text/javascript" src="./js/jquery.js" defer=""></script>
 </head>
@@ -15,9 +15,9 @@
 <body>
 
     <!--?-------------  Landing ----------->
-    <section class="landing-section">
+    <section class="landing-section container">
         <!--Logo-->
-        <div>
+        <div class="logo">
             <!--letra a-->
             <div class="forma1"></div>
             <div class="forma2"></div>
@@ -50,40 +50,10 @@
             </a>
         </div>
 
-        <!--
-    <button style="height: 50px; width: 50px;" onclick="changeLanguage('en-US')">English</button>
-    <button style="height: 50px; width: 50px;" onclick="changeLanguage('es-ES')">Español</button>
-    -->
+ 
     </section>
 
     <script type="module" src="./js/index-data.js"></script>
-
-    <script>
-
-
-        /* Futuro cambio manual de idioma
-        //Recogemos idioma del navegador
-        let defaultLanguage = navigator.language;
-        console.log('Navigator language: ' + defaultLanguage);
-
-        //Comprueba idioma guardado, si no existe utiliza default
-        let storedValue = localStorage.getItem('language');
-        if (storedValue == null) {
-            localStorage.setItem('language', defaultLanguage);
-        }
-
-        //Cambiamos y guardamos idioma
-        function changeLanguage(lang) {
-            localStorage.setItem('language', lang);
-            location.reload();
-        }*/
-
-
-    </script>
-
-
-
-
 
 
 </body>
